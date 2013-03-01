@@ -17,6 +17,11 @@ end
 def clean_phone(phone)
 	if phone.nil?
 		phone = "N/A"
+	elsif phone.length > 10
+		phone.gsub!('(', '')
+		phone.gsub!(')', '')
+		phone.gsub!('-', '')
+		phone.gsub!('.', '')
 	else
 		phone
 	end
@@ -29,7 +34,7 @@ contents.each do |row|
 	phone = clean_phone(row[:homephone])
 	zip = clean_zip(row[:zipcode])
 	
-	#phone["("] = ""
+	#phone.gsub(%r[()-]/,' ')
 	#phone[")"] = ""
 	#phone["-"] = ""
 	#phone[" "] = ""
