@@ -6,7 +6,17 @@ contents = CSV.open "CSVfiles\\example.csv", headers: true, header_converters: :
 
 contents.each do |row|
 	first_name = row[:first_name]
+	phone = row[:homephone]
 	zip = row[:zipcode]
+	
+	if phone.nil?
+		phone = "N/A"
+	end
+	
+	#phone["("] = ""
+	#phone[")"] = ""
+	#phone["-"] = ""
+	#phone[" "] = ""
 	
 	if zip.nil?
 		zip = "N/A"
@@ -16,5 +26,5 @@ contents.each do |row|
 		zip = zip[0..4]
 	end
 	
-	puts "#{first_name} #{zip}"
+	puts "#{first_name} #{phone} #{zip}"
 end
