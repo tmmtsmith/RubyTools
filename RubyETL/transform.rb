@@ -1,17 +1,10 @@
 # Opens, manipulates and loads
 
 require "csv"
+require "sunlight"
 
 def clean_zip(zip)
-	if zip.nil?
-		zip = "N/A"
-	elsif zip.length < 5
-		zip = zip.rjust(5,"0")
-	elsif zip.length > 5
-		zip = zip[0..4]
-	else
-		zip
-	end
+	zip.to_s.rjust(5,"0")[0..4]
 end
 
 def clean_phone(phone)
