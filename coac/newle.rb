@@ -2,6 +2,7 @@
 
 require 'rubygems'
 require 'oauth'
+require 'json'
 
 consumer_key = OAuth::Consumer.new(
     "ConsumerKey",
