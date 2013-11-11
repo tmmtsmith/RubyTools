@@ -15,3 +15,8 @@ print res.headers
 
 # Import ONLY a function from a module
 from module import function
+
+# To see what functions are available
+import module
+x = dir(module)
+print x
