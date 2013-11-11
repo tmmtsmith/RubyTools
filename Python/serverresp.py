@@ -12,3 +12,6 @@ print res.status_code
 print res.headers
 
 # GET (select), POST (insert), PUT (upadte), DELETE (delete)
+
+# Import ONLY a function from a module
+from module import function
