@@ -42,3 +42,16 @@ def macro_percent(c,p,f,t):
     
 y = get_calories(200,200,100)
 print y
+
+
+##  Math example
+
+def rate(n,o):
+    n = float(n)
+    o = float(o)
+    x = (((n-o)/o)*100)
+    return x
+
+
+inf = rate(.03,.02)
+print inf
