@@ -55,3 +55,23 @@ def rate(n,o):
 
 inf = rate(.03,.02)
 print inf
+
+
+## Double FOR with Math and Strings
+
+gameone = {
+    "samuel": 2,
+    "thomas": 2,
+    "nathan": 1,
+    "joe": 0
+}
+    
+gametwo = {
+    "samuel": 1,
+    "thomas": 2,
+    "nathan": 0,
+    "joe": 1
+}
+
+for i in gameone and gametwo:
+    print i + " score in game one " + str(gameone[i]) + " and score in game two " + str(gametwo[i]) + " with a total score of " + str((gameone[i] + gametwo[i]))
