@@ -75,3 +75,23 @@ gametwo = {
 
 for i in gameone and gametwo:
     print i + " score in game one " + str(gameone[i]) + " and score in game two " + str(gametwo[i]) + " with a total score of " + str((gameone[i] + gametwo[i]))
+
+
+## Lists and rows in a list
+
+s = []
+for x in range(0,13):
+    s.append(["O"] * 7)
+    
+t = []
+for x in range(0,9):
+    t.append(["0"] * 12)
+
+def pb(b):
+    for row in b:
+        print row
+
+# 7 columns, 13 rows
+print pb(s)
+# 12 columns, 9 rows
+print pb(t)
