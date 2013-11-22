@@ -144,3 +144,17 @@ for turn in range(4):
             board[guess_row][guess_col] = "X"
         print_board(board)
     print str(turn + 1)
+    
+    
+# Using dictionaries to replace characters in strings
+
+dict = {'a': 2, 'b': 6, 'c': 4}
+string = "ax + bx + c"
+       
+for c in string:
+    for key in dict:
+        if c == key:
+            x = str(dict[key])
+            string = string.replace(c,x)
+print string
+    
