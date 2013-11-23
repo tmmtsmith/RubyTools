@@ -10,7 +10,7 @@ avg(addme)
 
 def sma(x,p):
     b = (1 - 1)
-    e = 5
+    e = p
     end_all = len(x)
     while e <= end_all:
         new_list = x[b:e]
