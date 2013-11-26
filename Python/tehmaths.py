@@ -25,6 +25,7 @@ def sma(x,p):
 sma(addme,5)
 
 
+
 def digit_sum(n):
     x = str(n)
     y = []
@@ -34,3 +35,12 @@ def digit_sum(n):
     print sum(y)
     
 digit_sum(434)
+
+
+
+def factorial(x):
+    i = 1
+    while x >= 1:
+        i = i * x
+        x -= 1
+    return i
