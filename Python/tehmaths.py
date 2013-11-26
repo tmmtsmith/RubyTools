@@ -8,6 +8,8 @@ def avg (x):
         
 avg(addme)
 
+
+
 def sma(x,p):
     b = (1 - 1)
     e = p
@@ -21,7 +23,6 @@ def sma(x,p):
         b += 1
         e += 1
         
-    
 sma(addme,5)
 
 
@@ -44,3 +45,15 @@ def factorial(x):
         i = i * x
         x -= 1
     return i
+
+
+
+def is_prime(x):
+    if x < 2:
+        return False
+
+    for i in range(2, int(x ** 0.5) + 1):
+        if x % i == 0:
+            return False
+
+    return True
