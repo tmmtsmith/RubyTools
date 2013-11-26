@@ -23,3 +23,14 @@ def sma(x,p):
         
     
 sma(addme,5)
+
+
+def digit_sum(n):
+    x = str(n)
+    y = []
+    for i in x:
+        i = int(i)
+        y.append(i)
+    print sum(y)
+    
+digit_sum(434)
