@@ -48,12 +48,18 @@ def factorial(x):
 
 
 
-def is_prime(x):
-    if x < 2:
-        return False
+def is_prime(x): 
+    count = 0
+    if x < 2: 
+        print "False" 
+    elif x == 2: 
+        print "True"
+    else: 
+        for i in range(1, x+1): 
+            if x%i == 0: 
+                count += 1
+        if count < 3: 
+            print "True"
+        else: 
+            print "False"
 
-    for i in range(2, int(x ** 0.5) + 1):
-        if x % i == 0:
-            return False
-
-    return True
