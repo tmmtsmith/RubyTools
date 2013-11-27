@@ -7,3 +7,4 @@ res = urlopen(url)
 j = load(res)
 
 print j
+print j["last"]
