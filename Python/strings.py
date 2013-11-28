@@ -158,3 +158,16 @@ for c in string:
             string = string.replace(c,x)
 print string
     
+
+# Function which takes input from user
+
+enc = "encoded"
+
+def userinputfunction (x):
+    site = "https://www.nonexistent.com/code=" + x
+    dt = raw_input("What date?")
+    site += "&dt=" + dt
+    return site
+
+fullsite = userinputfunction(enc)
+print fullsite
