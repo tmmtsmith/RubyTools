@@ -17,3 +17,13 @@ var isMultipleOfThree = function (x) {
 var isNotMultipleOfThree = function (x) {
   return !isMultipleOfThree(x);
 };
+
+// Also:
+
+var isOdd = function(x) {
+    return x % 2 !== 0;
+}
+
+var isEven = function(x) {
+    return !isOdd(x);
+}
