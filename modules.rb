@@ -1,4 +1,3 @@
-
 module SqlConnection
 
     ## Note: this is not an actual connection, but testing modules and references to them
@@ -16,3 +15,10 @@ module SqlConnection
 end
 
 puts SqlConnection::connect("OurDB","OurServer")
+
+
+## Classes - read/write
+
+class Connect
+	attr_accessor :server, :database
+end
