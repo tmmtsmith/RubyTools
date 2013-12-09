@@ -2,3 +2,7 @@
 
 ##  Capital Words: 8fd456d389a84df0836a36ebc92a2a3f (provided by Codecademy); see http://capitolwords.org/api/1/
 ##  Python: pip install sunlight
+
+## Testing:
+gem install wepay
+require 'wepay'
