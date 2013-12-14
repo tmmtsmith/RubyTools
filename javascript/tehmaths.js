@@ -27,3 +27,24 @@ var isOdd = function(x) {
 var isEven = function(x) {
     return !isOdd(x);
 }
+
+
+// Switch statement
+var op = "*";
+var result;
+
+switch (op) {
+    
+  case "*":
+    result = (x * y);
+  break;
+  
+  case "/":
+      result = (x / y);
+  break;
+    
+    
+  default:
+    result = "Multiply or divide operator only.";
+  break;  
+}
