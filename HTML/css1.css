@@ -1,0 +1,25 @@
+.main {
+  background: white; 
+  min-height: 400px; 
+  padding: 20px; 
+  width: 80%;
+}
+
+.side {
+  background: white; 
+  min-height: 400px; 
+  padding: 20px; 
+  width: 20%;
+}
+
+.head {
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+}
+
+.foot {
+  width: 100%;
+}
