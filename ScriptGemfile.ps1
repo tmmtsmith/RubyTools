@@ -1,4 +1,4 @@
-﻿New-Item C:\OurRubyProject\Gemfile -type file -force -value "source 'https://rubygems.org'
+﻿New-Item "C:\RubyProjectName\Gemfile" -type file -force -value "source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
